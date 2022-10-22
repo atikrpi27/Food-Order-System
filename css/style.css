@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 150px;
+}
+
+.responsive-header-address,
+.responsive-header-details {
+    display: inline-block;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.address,
+.details {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    float: left;
+    margin-top: 11px;
+    margin-right: 15px;
+    color: #656565;
+}
+
+.social li {
+    list-style: none;
+    float: left;
+    width: 47px;
+    display: inline-block;
+}
+
+.social li a {
+    text-decoration: none;
+    display: block;
+    background: #656565;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 15px;
+    /* line-height:25px; */
+    margin-left: 5px;
+    transition: transform 1s;
+    padding: 9px;
+}
+
+.social li a:hover {
+    background: #6565653b;
+    color: red;
+    transform: rotate(360deg) scale(1.2);
+    font-size: 18px;
+}
+
+
+
+/*---------Media Query---------*/
+@media only screen and (max-width: 991px){
+    .social{
+        float: right;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .address,
+    .details {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .responsive-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .responsive-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 0px) {
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 340px) {
+    .social li {
+        list-style: none;
+        float: left;
+        width: 43px;
+        display: inline-block;
+    }
+
+    .social li a {
+        text-decoration: none;
+        display: block;
+        background: #656565;
+        color: white;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        text-align: center;
+        font-size: 14px;
+        margin-left: 5px;
+        transition: transform 1s;
+        padding: 9px;
+    }
