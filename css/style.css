@@ -7,7 +7,7 @@
 }
 
 .header {
-    height: 150px;
+    height: 90px;
 }
 
 .responsive-header-address,
@@ -46,28 +46,39 @@
     background: #656565;
     color: white;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 34px;
+    width: 34px;
     text-align: center;
-    font-size: 15px;
-    /* line-height:25px; */
+    font-size: 14px;
+    line-height: 18px;
     margin-left: 5px;
     transition: transform 1s;
-    padding: 9px;
+    padding: 8px;
 }
 
 .social li a:hover {
     background: #6565653b;
     color: red;
-    transform: rotate(360deg) scale(1.2);
-    font-size: 18px;
+    transform: rotate(360deg) scale(1.1);
+    font-size: 16px;
 }
 
 
 
+/*---------Navbar---------*/
+
+#navbar{
+    border-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
 /*---------Media Query---------*/
-@media only screen and (max-width: 991px){
-    .social{
+@media only screen and (max-width: 991px) {
+    .social {
         float: right;
     }
 }
@@ -90,6 +101,24 @@
 @media only screen and (max-width: 576px) {
     .responsive-header {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #navbar{
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #navbar{
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    #navbar{
+        margin-top: -5px;
     }
 }
 
@@ -132,3 +161,4 @@
         transition: transform 1s;
         padding: 9px;
     }
+
