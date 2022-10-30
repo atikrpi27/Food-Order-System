@@ -8,6 +8,8 @@
 
 body {
     overflow-x: hidden;
+    height: 1500px !important;
+    /* background-color: #27a776 !important; */
 }
 
 .container {
@@ -104,12 +106,9 @@ footer {
     left: 0;
     right: 0;
     text-align: center;
-    /* display: flex;
-    justify-content: center;
-    justify-items: center; */
 }
 
-.footer-right{
+.footer-right {
     display: block;
     margin-left: auto;
     width: 60%;
@@ -133,10 +132,45 @@ footer {
 .footer-email p {
     text-align: justify;
     padding-left: 35px;
-    /* float: left; */
 }
 
+/*------- Scroll top button ------*/
+
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 1;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    text-decoration: none;
+    background: rgba(122, 121, 121, 0.8);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background: #27a776;
+    color: rgb(255, 255, 255);
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+
 /*---------Media Query---------*/
+
 @media only screen and (max-width: 991px) {
     .social {
         float: right;
@@ -210,8 +244,9 @@ footer {
         display: none;
     }
 
-    .footer-right{
+    .footer-right {
         width: 100%;
+
     }
 }
 
@@ -221,40 +256,41 @@ footer {
         margin-right: 20px;
 
     }
+}
 
-    @media only screen and (max-width: 1200px) and (min-width: 340px) {
-        .social li {
-            list-style: none;
-            float: left;
-            width: 40px;
-            display: inline-block;
-        }
-
-        .social li a {
-            text-decoration: none;
-            display: block;
-            background: #656565;
-            color: white;
-            border-radius: 50%;
-            height: 34px;
-            width: 34px;
-            text-align: center;
-            font-size: 14px;
-            line-height: 18px;
-            margin-left: 5px;
-            transition: transform 1s;
-            padding: 8px;
-        }
-
-        .social li a:hover {
-            background: #6565653b;
-            color: red;
-            transform: rotate(360deg) scale(1.2);
-            font-size: 16px;
-        }
-
-        .social {
-            float: right;
-        }
-
+@media only screen and (max-width: 1200px) and (min-width: 340px) {
+    .social li {
+        list-style: none;
+        float: left;
+        width: 40px;
+        display: inline-block;
     }
+
+    .social li a {
+        text-decoration: none;
+        display: block;
+        background: #656565;
+        color: white;
+        border-radius: 50%;
+        height: 34px;
+        width: 34px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 5px;
+        transition: transform 1s;
+        padding: 8px;
+    }
+
+    .social li a:hover {
+        background: #6565653b;
+        color: red;
+        transform: rotate(360deg) scale(1.2);
+        font-size: 16px;
+    }
+
+    .social {
+        float: right;
+    }
+
+}
