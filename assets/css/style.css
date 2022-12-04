@@ -8,12 +8,16 @@
 
 body {
     overflow-x: hidden;
-    height: 1500px !important;
+    /* height: 1500px !important; */
     /* background-color: #27a776 !important; */
 }
 
-.container {
+/* .container {
     height: 250px;
+} */
+
+.container-fluid{
+    width: 95%;
 }
 
 .header {
@@ -77,14 +81,38 @@ body {
 
 #navbar {
     border-radius: 50px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.navbar-nav li{
+    width: 50%;
+}
+
+.navbar-nav a{
+    font-weight: bold;
 }
 
 /*---------banner---------*/
 
+.banner-img{
+    margin-top: -30px;
+}
 
-
+.banner-img img{
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* position: absolute; */
+    z-index: -1;
+}
 
 /*---------Footer---------*/
 footer {
@@ -96,7 +124,6 @@ footer {
 .footer-middle {
     position: relative;
     height: 100%;
-
 }
 
 .footer-social {
@@ -204,6 +231,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    #navbar {
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     #navbar {
         margin-top: 45px;
@@ -213,6 +246,18 @@ footer {
 @media only screen and (max-width: 576px) {
     #navbar {
         margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #navbar {
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #navbar {
+        width: 85%;
     }
 }
 
