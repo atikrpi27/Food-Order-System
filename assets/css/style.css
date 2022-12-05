@@ -120,7 +120,7 @@ body {
     z-index: -1;
 }
 
-.brief {
+.banner-details {
     padding: 130px 45px;
     height: 200px;
     text-align: center;
@@ -128,12 +128,13 @@ body {
 
 .heading{
     color: white;
+    font-family: 'Roboto Slab', serif;
 }
 
 .pone {
-    font-family: 'Teko', sans-serif;
-    font-size: 66px;
-    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+    font-size: 58px;
+    font-weight: 100;
     color: white;
     margin: 0px;
     padding: 0px;
@@ -143,7 +144,6 @@ body {
 .ptwo {
     font-family: 'Teko', sans-serif;
     font-size: 36px;
-    /* font-weight:bold; */
     color: white;
     margin: 0px;
     padding: 0px;
@@ -153,11 +153,9 @@ body {
 .pthree {
     font-family: 'Teko', sans-serif;
     font-size: 32px;
-    /* font-weight:bold; */
     color: white;
     margin: 0px;
     padding: 0px;
-    /* padding-bottom: 10px;  */
 }
 
 .sicon {
@@ -168,6 +166,49 @@ body {
     margin-top: -26px;
     margin-left: 140px;
 }
+
+.search {
+    width: 30%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid #00B4CC;
+    border-right: none;
+    padding: 7px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 
 /*---------Footer---------*/

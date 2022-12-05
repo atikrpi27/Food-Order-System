@@ -8,8 +8,12 @@
     <title>Food Delivery - Home</title>
     <!---------------Favicons--------------->
     <link rel="Icon" href="assets/Images/icon.png" />
-    <!---------------Google Fonts--------------->
+    <!-- -------------Google Fonts--------------->
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Secular+One&display=swap" rel="stylesheet">
     <!---------------Font Awesome CDN--------------->
     <script src="https://kit.fontawesome.com/7a78b2cf01.js" crossorigin="anonymous"></script>
     <!---------------BootStrap CSS CDN--------------->
@@ -189,16 +193,23 @@
                         <img src="assets/images/banner-img.jpg" alt="Banner Image">
                     </div>
 
-                    <div class="brief">
+                    <div class="banner-details">
                         <h1 class="heading">Welcome To Our Food Delivery</h1>
-                        <p class="pone"><b>Hungrey?!</b></p>
-                        <p class="ptwo">Good,We are Here</p>
+                        <p class="pone">Hungry?!</p>
+                        <p class="ptwo">Okay! We are Here</p>
                         <p class="pthree"> to Serve you</p>
-                        <div class="form-box">
+                        <!-- <div class="form-box">
                             <input class="food" type="text" name="search" placeholder="What you are looking for?">
                             <div class="search-icon"><a href=""><i class="fas fa-search sicon"></i></a></div>
+                        </div> -->
+                        <div class="search mt-3">
+                            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
-                        <button><a href="gallery.html">Read More</a></button>
+
+                        <button type="button" class="btn btn-info mt-4">Read More</button>
                     </div>
                 </div>
             </div>
