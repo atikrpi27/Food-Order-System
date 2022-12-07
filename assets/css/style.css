@@ -378,7 +378,7 @@ footer {
     }
     
     .banner-img img{
-        height: 100vh;
+        height: 50vh;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -389,7 +389,7 @@ footer {
     }
     
     .banner-details {
-        padding: 50px 15px;
+        padding: 100px 15px;
         /* height: 200px; */
         text-align: center;
     }
