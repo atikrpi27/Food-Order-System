@@ -389,7 +389,7 @@ footer {
     }
     
     .banner-details {
-        padding: 100px 15px;
+        padding: 80px 15px;
         /* height: 200px; */
         text-align: center;
     }
@@ -462,7 +462,21 @@ footer {
       }
     
       .ReadButton{
-        display: none;
+        background-color: #7168687a;
+        border: 2px solid #fff;
+        font-weight: 500;
+      }
+      
+    .ReadButton a{
+        text-decoration: none;
+        color: white;
+    }
+    
+      .ReadButton:hover{
+        background: #7b77777d;
+        border: 2px solid #fff;
+        color: #fff;
+        font-weight: 500;
       }
 }
 
