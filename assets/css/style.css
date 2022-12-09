@@ -396,6 +396,22 @@ footer {
     padding-left: 35px;
 }
 
+.main-footer {
+    height: 100%;
+    background: #656565;
+    color: white;
+}
+
+.main-footer p{
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /*------- Scroll top button ------*/
 
 .scroll-top {
@@ -503,8 +519,6 @@ footer {
     }
 
     .banner {
-        /* height: 90vh; */
-        /* height: 900px; */
         height: 100%;
     }
 
