@@ -405,6 +405,7 @@ footer {
 .main-footer p{
     padding: 0;
     margin: 0;
+    font-size: 14px;
 }
 
 .main-footer a{
