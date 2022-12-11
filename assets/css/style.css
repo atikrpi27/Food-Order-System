@@ -352,7 +352,6 @@ body {
 footer {
     background-color: #808080;
     color: black;
-    /* height: 300px; */
     height: 100%;
 }
 
@@ -396,19 +395,21 @@ footer {
     padding-left: 35px;
 }
 
-.main-footer {
+.footerCopyright{
     height: 100%;
+    width: 100%;
     background: #656565;
     color: white;
+    overflow: hidden;
 }
 
-.main-footer p{
+.footerCopyright p{
     padding: 0;
     margin: 0;
     font-size: 14px;
 }
 
-.main-footer a{
+.footerCopyright a{
     text-decoration: none;
     color: #fff;
 }
